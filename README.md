@@ -65,8 +65,10 @@ Then run:
 
 2. Generate assets, run migrations:
 
-    script/rails generate surveyor:install
+    ```
+    rails generate surveyor:install
     rake db:migrate
+    ```
 
 3. Try out the "kitchen sink" survey. The rake task above generates surveys from our custom survey DSL (a good format for end users and stakeholders).
 
@@ -99,7 +101,7 @@ Surveyor depends on:
 * HAML
 * SASS
 * fastercsv (or CSV for ruby 1.9) for csv exports
-* formtastic
+* formtastic (`~>1.2`)
 * UUID
 
 Specific versions of the gem dependencies are listed in the gemspec.
